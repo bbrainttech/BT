@@ -79,9 +79,6 @@ const activate_current_link = link => {
     for (i of allNavLinks) { cls(i, 'act', 'remove') }
     cls(link, 'act', 'add');
 }
-// const removw_current_link = (i) => {
-//     fcls(i, 'act', 'remove') }
-// }
 
 const activateNavLinksOnscroll = () => {
     const yt = el => { return el.offsetTop }
@@ -90,7 +87,6 @@ const activateNavLinksOnscroll = () => {
     window.onscroll = () => {
         for (let i = 0; i < linkPages.length; i++) {
             let thisTop = yt(linkPages[i]) - (0.015 * yt(linkPages[i]))
-            console.log(window.pageYOffset, linkPages[2].getBoundingClientRect().height)
             if (window.pageYOffset >= thisTop) {
                 activate_current_link(allNavLinks[i])
             }
