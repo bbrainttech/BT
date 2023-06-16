@@ -545,8 +545,7 @@ header {
 #portfolio,
 #team, #contact {
     padding: 0 7em;
-    border : solid red;
-    overflow-y : hidden;
+    overflow: hidden;
     margin: 3.5em 0;
 }
 
