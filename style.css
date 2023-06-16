@@ -709,12 +709,6 @@ header {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1368px) {
-    .filter-elements {
-        /* --this-l: 6.7em; */
-    }
-}
-
 .port-contents .img-info {
     position: absolute;
     bottom: 0;
